@@ -1,0 +1,70 @@
+body {
+  font-family: Helvetica;
+  text-align: left;
+  width: 100%;
+
+  background-color: #87B4C2;
+
+
+}
+.Question {
+  font-weight: bold;
+}
+header {
+  width: 100%;
+  margin: auto;
+  margin-top: -10px;
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+  background-image: url("dog-cat.jpg");
+  background-size: 1200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+}
+header p {
+  background-color: DarkSlateGray;
+  width: 100%;
+  padding: 15px;
+  margin: -10px;
+}
+h1 {
+  text-align: center;
+  font-size: 70px;
+}
+
+h2 {
+  text-align: center;
+}
+
+
+p {
+  font-size: 18px;
+}
+main {
+  margin-left: 250px;
+}
+
+input {
+  border:none; /* Get rid of the browser's styling */
+  border-bottom:1px solid black; /* Add your own border */
+  background-color: transparent;
+}
+
+.requirements {
+  text-align: center;
+  color: crimson;
+}
+
+.textarea {
+  background-color: transparent;
+}
+
+button[type = submit] {
+  text-align: center;
+}
+
+#requirement-div {
+  
+  border: #fffde7;
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <title>Adoption Form</title>
+</head>
+<body>
+  <header>
+  </br> 
+    <h1 id="title">Pet Adoption Application</h1> </br> </br>
+    <p id="discription">Thank you for applying to adopt a pet! Please fill out the form below and submit. We will contact you by email upon approval.</p>
+  </header>
+  <main>
+
+    <form id="survey-form" action="yadid00sharma00@gmail.com">
+
+      <div id=requirement-div>
+        <h2 id="requirement-title">A few requirements before you can adopt</h2>
+        <p class="requirements"> Be atleast 21 years of age.</p>
+        <p class="requirements"> Be sure that everyone in your household knows and agree that your new friend can live.</p>
+        <p class="requirements"> Have a valid identification with current address.</p>
+      </div>
+    
+    
+      <div id="personal-information">
+        <fieldset>
+          <legend> <h2>Applicant Information</h2> </legend>
+          <label class="Question" id="name-label">Name:</label> <input id="name" type="text" required/><br><br>
+          <label class="Question" id="email-label">Email:</label> <input id="email" type="email" required/><br><br>
+          <label class="Question" id="number-label"for="number-label">Phone Number:</label> <input id="number" type="number" min="1111111111" max="9999999999" required/><br><br>
+          <label class="Question">Date of Birth:</label> <input type="date" required/><br><br>
+          <label class="Question" id="address-label">Address:
+          <textarea class="textarea" cols="100" rows="2" required></textarea>
+          </label>
+        </fieldset>
+        <br><br>
+      </div>
+
+
+
+
+      <div id="residence-information">
+        <h2>Residence Information</h2>
+        <fieldset>
+          <legend>Type of dwelling: </legend>
+          <input type="radio" name="dwelling" value="House">House<br>
+          <input type="radio" name="dwelling" value="Apartment">Apartment<br>
+          <input type="radio" name="dwelling" value="Mobile">Mobile<br>
+          <input type="radio" name="dwelling" value="Others">Others(please mention): &nbsp; <input type="text" name="dwelling_other"/><br>
+        </fieldset>  
+        <br>
+
+        <fieldset>
+          <legend>Do you: </legend>
+          <input type="radio" name="type" value="Own">Own<br>
+          <input type="radio" name="type" value="Rent">Rent<br>
+          <input type="radio" name="type" value="Live with parents">Live with parents<br>
+          <input type="radio" name="type" value="Others">Others(please mention): &nbsp; <input type="text" name="type_other"/><br>
+        </fieldset>  
+        <br>
+
+        <fieldset>
+          <legend>Name of Landlord/Property owner:</legend>
+          <input type="text" />
+        </fieldset>
+        <br>
+
+        <fieldset>
+          <legend>Phone Number:</legend>
+          <input type="text" />
+        </fieldset>
+
+        <fieldset>
+          <legend>Are there any children in the household: </legend>
+          <input type="radio" name="chidren" value="chidren-no">No<br>
+          <input type="radio" name="chidren" value="chidren-yes">Yes, -Ages?: &nbsp; <input type="number" name="chidren_age"/><br>
+        </fieldset>  
+        <br>
+      
+        <fieldset>
+          <legend>Are pets allowed: </legend>
+          <input type="radio" name="pet-allowed" value="pet-allowed-yes">Yes<br>
+          <input type="radio" name="pet-allowed" value="pet-allowed-no">No<br>
+        </fieldset>  
+        <br>
+
+        <fieldset>
+          <legend>Is this your first experience in owning a pet: </legend>
+          <input type="radio" name="experience" value="Yes">Yes<br>
+          <input type="radio" name="experience" value="No">No, : &nbsp; <input type="text" name="type_other"/><br>
+        </fieldset>  
+        <br>
+
+        <fieldset>
+          <legend>Have you previously adopted from us? </legend>
+          <input type="radio" name="previos-adoption" value="No">No<br>
+          <input type="radio" name="previos-adoption" value="Yes">Yes, When? : &nbsp; <input type="text" name="type_other"/><br>
+        </fieldset>  
+        <br>
+
+        <fieldset>
+          <legend>Have you ever surrendered any pet to us? </legend>
+          <input type="radio" name="surrendered-pet" value="No">No<br>
+          <input type="radio" name="surrendered-pet" value="Yes">Yes, When/Explain? : &nbsp; <input type="text" name="type_other"/><br>
+        </fieldset>  
+        <br>
+
+        <fieldset>
+          <legend>Why do yoy want to adopt this pet? </legend>
+          <input type="radio" name="why-adopt" value="Companion">Companion<br>
+          <input type="radio" name="why-adopt" value="Security">Security<br>
+          <input type="radio" name="why-adopt" value="House Pet">House Pet<br>
+          <input type="radio" name="why-adopt" value="Breeding">Breeding<br>  
+          <input type="radio" name="why-adopt" value="Others">Others(please mention): &nbsp; <input type="text" name="type_other"/><br>
+        </fieldset>  
+        <br>
+
+      <fieldset>
+        <legend>Do you plan to move  in the next 12 months? </legend>
+        <input type="radio" name="moving-out" value="No">No<br>
+        <input type="radio" name="moving-out" value="Yes">Yes, what do you plan to do with your pet? : &nbsp; <input type="text" name="type_other"/><br>
+      </fieldset>  
+      <br>
+    </div>
+
+    <div id="pet-information">
+      <h2>Pet Information</h2>
+
+    <fieldset>
+      <legend class="Question">Type of Pet:</legend>
+      <input id="pet-type" type="text"/>
+    </fieldset>
+    <br>
+
+    <fieldset>
+      <legend class="Question">Age of Pet:</legend>
+      <div class="answer" class="age-answer">
+        <label for="Young">
+          <input id="Young" type="checkbox" value="Young" Name="Age"/>Young
+        </label><br>
+        <label for="Adult">
+          <input id="Adult" type="checkbox" value="Adult" Name="Age"/>Adult
+        </label><br>
+        <label for="Senior">
+          <input id="Senior" type="checkbox" value="Senior" Name="Age"/>Senior
+        </label>
+    </fieldset>
+    <br>
+
+    <fieldset>
+      <legend class="Question">Gender of Pet:</legend>
+      <div class="gender-answer" class="answer">
+      <label for="Any">
+        <input id="Any" type="radio" name="Gender" checked/>Any
+      </label><br>
+      <label for="Female">
+        <input id="Female" type="radio" name="Gender"/>Female
+      </label><br>
+      <label for="Male">
+        <input id="Male" type="radio" name="Gender"/>Male
+      </label>
+    </fieldset>
+    <br>
+
+    <fieldset>
+      <legend class="Question" for="additional">Any additional information:</legend>
+      <textarea class="textarea" cols="100" rows="2"></textarea>
+    </fieldset>
+    <br>
+    </div>
+
+    <br>
+    <button type="submit">
+      <A HREF="pet-adoption-profile/index.html" LINK="#000000"> Submit </A>
+    </button>
+
+    </form>
+  </main>
+</body>
+</html>
